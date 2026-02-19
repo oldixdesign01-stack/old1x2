@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+:root {
+  --white: #FFFFFF;
+  --whitegray: #DEDEDE;
+  --greenblue: #62E1BA;
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('fonts/BebasNeueCyrillic.woff2') format('woff2');
+  font-weight: 400; /* обычный вес */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dm sans';
+  src: url('fonts/dm-sans-light.ttf') format('truetype');
+  font-weight: 300; /* обычный вес */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dm Sams extra';
+  src: url('fonts/dm-sans-extra-bold.ttf') format('truetype');
+  font-weight: 800; /* обычный вес */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ice land';
+  src: url('fonts/Iceland-Regular.ttf') format('truetype');
+  font-weight: 400; /* обычный вес */
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  padding-block: 33px;
+  background-size: 1440px , 100px;
+  background-color: #191919;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.main {
+  margin-top: 100px;
+}
+
+.header__div   {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  gap: 60px;
+}
+ul {
+  list-style: none;
+}
+
+
+.header__list-link {
+font-family: "DM sans", sans-serif;
+font-size: 16px;
+color: var(--whitegray);
+transition: color 0.3s;
+}
+a {
+  text-decoration: none;
+}
+.header__list-link.active {
+  color: var(--white);
+}
+.header__list-link:hover {
+  color: #C2C2C2;
+}
+.header__button {
+  font-family: DM-sans extra, sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  color: #000000;
+  padding: 2.6px 4.8px;
+  background: var(--greenblue);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.header__button:hover {
+  opacity: 90%;
+}
+
+
+
+.hero {
+  padding-block: 148px;
+}
+
+.hero__container {
+  position: relative;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.hero__content {
+  max-width: 583px;
+  padding-block: 102px;
+}
+.hero__image {
+  position: absolute;
+  top:0;
+  right: -79px;
+}
+.hero__title {
+  font-family: "BebasNeue", sans-serif;
+  font-size: 105px;
+  line-height: 89px;
+  color: #000000;
+  letter-spacing: -0px;
+}
+.hero_desc {
+  font-family: "Dm sans",sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  margin-top: 37px;
+}
+.info__1 {
+  padding-block: 148px;
+  background-color: #181818;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.info1__div {
+  max-width: 1200px;
+  margin-inline: auto;
+  
+}
+.info1__div {
+  display: flex;
+}
+.info1__title {
+  font-family: "Dm sans extra", sans-serif;
+  font-weight: 800;
+  font-size: 67px;
+  color: var(--white);
+  text-align: center;
+}
+.info1__list-item {
+  font-family: "Dm sans" , sans-serif;
+  font-weight: 400;
+  font-size: 66px;
+  color: var(--white);
+  white-space: nowrap;
+  
+  
+
+}
+.info1__list {
+   list-style-position: inside;
+   
+  }
+  .info1__list {
+max-width: 1200px;
+padding-block: 51px;
+  }
+.info__2 {
+  padding-block: 93px;
+  min-height: 800px;
+}
+  .info2__div {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.info2__title {
+  font-family: "Dm sans extra" , sans-serif;
+  font-weight: 800;
+  font-size: 67px;
+  color: #000000;
+  text-align: center
+}
+.info2__list-item {
+  font-family: "BebasNeue",sans-serif;
+  font-weight: 400;
+  font-size: 102px;
+  color: #000000;
+}
+.info2__list {
+  padding-block: 118px;
+}
+.contacts {
+  background-color: #181818;
+  padding-block: 33px;
+}
+.contacts__div {
+  max-width: 1200px;
+  margin-inline: auto;
+  min-height: 400px;
+}
+.email-text , .telefon__text , .teleg__text , .insta__text{
+  font-family: "Ice land" , sans-serif;
+  font-weight: 400;
+  font-size: 43px;
+  
+  color: var(--white);
+  margin-bottom: 17px;
+  
+}
+.email , .telefon , .telegram , .instagram{
+  display: flex;           /* ставим текст и иконку в ряд */
+  align-items: center;     /* выравниваем по вертикали */
+  gap: 8px;                /* отступ между текстом и иконкой */
+  margin-bottom: 10px;     /* отступ между блоками */
+
+}
+
+.email-img , .telefon__img , .insta__img , .telega__img {
+  margin-bottom: 17px;
+}
+.img__contacts {
+  margin-bottom: 49px;
+}
